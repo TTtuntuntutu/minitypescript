@@ -1,0 +1,2 @@
+var singleDeclaration = 1;
+
