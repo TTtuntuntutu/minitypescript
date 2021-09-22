@@ -7,12 +7,11 @@ export function parse(lexer: Lexer): Module {
     lexer.scan()
 
     return parseModule()
-
     function parseModule(): Module {
         // 找语句，以分号结束；
         const statements = parseSeparated(parseStatement, () => tryParseToken(Token.Semicolon))
 
-        // ??
+        // 结束
         parseExpected(Token.EOF)
         return { statements, locals: new Map() }
     }
