@@ -32,8 +32,6 @@ TypeScript在此基础上做了扩展，分析mini-typescript就可以看到：
 
 <Br/>
 
-原仓库在[这里](https://github.com/sandersn/mini-typescript)。
-
 
 
 
