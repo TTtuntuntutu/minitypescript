@@ -24,7 +24,7 @@ TypeScript在此基础上做了扩展，分析mini-typescript就可以看到：
 4. transform阶段：
    1. 如果存在类型标注，移除一下。操作非常方便，还记得之前收集的类型是`typename` ，这里之前将Node上的这个信息给去掉了就行；
 5. emit/generator阶段：
-   1. 生成js代码。因为在AST Node构建之初，有`text`属性记录原始文本，所以再搬回来就是了。
+   1. 生成js代码。因为在AST Node构建之初，有`text`属性记录原始文本，所以再搬回来就是了。如果涉及变量标注，就得手动拼接以移除；
 
 <Br/>
 
